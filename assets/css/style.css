@@ -1,0 +1,593 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    height: 3000px;
+    /* overflow: hidden; */
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* height: 49px; */
+    background-color: brown;
+    z-index: 1;
+    /* quan trọng để hiện nổi */
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    list-style-type: none;
+}
+
+#nav>li>a {
+    color: #fff;
+}
+
+#nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: palegreen;
+}
+
+#nav li a {
+    color: antiquewhite;
+    text-decoration: none;
+    line-height: 49px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: black;
+    width: 100%;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .seach-btn {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+    line-height: 49px;
+}
+
+#header .seach-menu {
+    display: none;
+}
+
+#header .seach-btn:hover {
+    background-color: green;
+}
+
+#header .seach-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+#slider {
+    margin-top: 49px;
+    padding-top: 50%;
+    background: url('../img/anh-anime-phong-canh.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .nen-slider {
+    bottom: 0;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    padding: 32px 10px;
+    position: absolute;
+}
+
+#slider .form {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .in-form-a {
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 0 0 1px #000;
+}
+
+#content {
+    max-width: 100%;
+}
+
+#content .the-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    min-height: 750px;
+}
+
+#tour-section .place {
+    float: left;
+}
+
+#content .call-content {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+#content .think-content {
+    margin-top: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+#content .write-content {
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    /*dosng chu nhu bao*/
+}
+
+
+/* THE BAND */
+
+#conent .name-photo {
+    width: 800px;
+    max-width: 100%;
+}
+
+#content .of-gust {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+#content .gust {
+    float: left;
+    text-align: center;
+    width: 33.3333%;
+}
+
+#content .the-name {
+    margin-top: 62px;
+    font-size: 15px;
+}
+
+#content .the-name {
+    font-size: 15px;
+}
+
+
+/* END THE BAND */
+
+
+/* TOUR DATE  */
+
+#content .text-while {
+    color: #fff !important;
+}
+
+#content .the-content-one {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .tickets-list {
+    margin: 30px 0;
+    background-color: #fff;
+}
+
+#content .tickets-list li {
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #757575;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+}
+
+#content .slod-out {
+    margin: 0 0 0 16px;
+    background: #F44336;
+    color: #fff;
+    padding: 0 8px;
+}
+
+#content .quantily {
+    width: 24.7px;
+    height: 22px;
+    float: right;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 8px;
+    margin: 0 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+}
+
+#content .call-content-one {
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#content .think-content-one {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+    color: #ccc;
+    font-weight: 700;
+    text-align: center;
+}
+
+.write-content-one {
+    padding: 32px 0;
+    display: inline-block;
+}
+
+.tickets-list {
+    margin-top: 30px 25px;
+    list-style-type: none;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.write-content-one {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.where-event {
+    padding: 0 8px;
+    margin: 0 0 16px;
+    width: 33.3333%;
+    float: left;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.body-place {
+    padding: 0px 16px 0;
+    padding-bottom: -16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.name-place {
+    padding-top: 15px;
+}
+
+.time-event {
+    margin: 15px 0;
+}
+
+.book-sticket {
+    background-color: #000;
+    color: #fff;
+    padding: 10.3px 17.8px;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.body-place .book-sticket:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.place {
+    width: 100%;
+    display: block;
+}
+
+
+/* <-- END TOUR DATES--> */
+
+
+/*  Contact  */
+
+.call-content-two {
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.think-content-two {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 15px;
+    margin-bottom: 48px;
+    font-weight: 900;
+}
+
+.col .col-full {
+    width: 100%;
+    display: grid;
+}
+
+.the-contact-two {
+    text-align: center;
+    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.row {
+    display: flex;
+    padding-left: -8px;
+    padding-right: -8px;
+}
+
+form {
+    display: block;
+}
+
+.row .col-half {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.col .col-half .setup-infor {
+    display: inline-block;
+}
+
+.col .col-full {
+    width: 100%;
+    padding-left: 8px;
+    display: grid;
+    padding-top: 15px;
+}
+
+.in-inform {
+    padding: 10.2px 8.6px;
+    padding-right: 0;
+}
+
+input[type="submit"] {
+    border: 1px solid;
+    font-size: 20px;
+    margin: 16px 0;
+    padding: 8px 16px;
+    float: right;
+    background: #000;
+    color: #fff;
+    outline: none;
+    /* appearance: none; */
+    -webkit-appearance: none;
+}
+
+input[type="submit"]:hover {
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.col.col-half i[class*="ti"] {
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.row .contact-icon {
+    padding-top: 48px;
+}
+
+
+/* END Contact */
+
+
+/* MAP */
+
+.map-gg img {
+    width: 100%;
+}
+
+
+/* END MAP */
+
+
+/* ticket and add web */
+
+#footer {
+    padding: 64px 16px;
+    opacity: 0.6;
+}
+
+#footer .footer-icon {
+    text-align: center;
+    direction: none;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+#footer .footer-icon a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+#footer .footer-icon a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-builder {
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-builder a {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* -- BUY TICKETS */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.contain {
+    min-width: 900px;
+    min-height: auto;
+    position: relative;
+}
+
+.modal-close {
+    background: #009688;
+    right: 0;
+    padding: 8.6px 10.5px;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+}
+
+.modal-close:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.modal-header-icon {
+    margin-right: 20px;
+}
+
+header.modal-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* ket hop voi dong 503 thi moi can chuan dc*/
+}
+
+.input-modal {
+    background: #fff;
+}
+
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    padding: 32px 16px;
+    font-size: 30px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    /*ket  hop voi dong 490 ? */
+    justify-items: center;
+}
+
+.pull .infor-modal {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid;
+}
+
+.input-modal {
+    background: #fff;
+    padding: 0 16px;
+    width: 100%;
+}
+
+p.name-modal {
+    font-size: 15px;
+    width: 100%;
+    text-align: left;
+    margin: 15px 0;
+    display: inline-block
+}
+
+button {
+    width: 100%;
+    background: #009688;
+    border: none;
+    padding: 16px;
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+button:hover {
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+p.need-help {
+    font-size: 15px;
+    text-align: right;
+    margin: 15px 0;
+}
+
+.support {
+    text-align: right;
+    padding-bottom: 16px;
+}

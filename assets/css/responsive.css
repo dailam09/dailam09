@@ -1,0 +1,146 @@
+@media (min-width:1024px) {}
+
+@media (min-width:740px) and (max-width:1023px) {
+    #content .the-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 740px) {
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 49px;
+        /*neu bo di thi nut onclick menu k hoat dong*/
+        background-color: #000;
+        z-index: 1;
+        /* quan trọng để hiện nổi */
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+    }
+    #nav>li {
+        max-width: 100%;
+        display: block;
+        background: #000;
+    }
+    #nav li a {
+        color: antiquewhite;
+        text-decoration: none;
+        line-height: 49px;
+        padding: 0 24px;
+        display: block;
+    }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+    #nav .subnav {
+        background-color: #ccc;
+        position: initial;
+        /* color: #fff; */
+        padding: 5px 24.6px;
+    }
+    .subnav li {
+        padding: 5px 0;
+    }
+    /* chu tren nen slide */
+    #slider .nen-slider {
+        display: none;
+    }
+    /* end nen slide */
+    #content .the-content {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 64px 16px;
+        width: 800px;
+        max-width: 100%;
+        min-height: 667px;
+    }
+    #header .seach-btn {
+        display: none;
+    }
+    #header .seach-menu {
+        display: block;
+        float: right;
+        padding: 0 21px;
+        line-height: 49px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header .seach-menu:hover {
+        background-color: #ccc;
+    }
+    #header .seach-menu:hover .menu-icon {
+        color: #000;
+    }
+    #header .seach-menu {
+        color: #fff;
+        font-size: 20px;
+    }
+    .name-photo {
+        display: flex;
+    }
+    #nav li:hover .subnav {
+        display: block;
+    }
+    /* chinh the band */
+    #content .name-photo .gust {
+        text-align: center;
+        width: 100%;
+    }
+    #content .the-name {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+    #content .of-gust {
+        width: 60%;
+    }
+    #content .write-content {
+        margin-bottom: 15px;
+    }
+    .name-photo {
+        display: inline-block;
+        padding: 32px 0;
+    }
+    /* chinh tour date */
+    .where-event {
+        padding: 0 8px;
+        margin: 0 0 16px;
+        width: 100%;
+        margin-top: auto;
+        display: inline-block;
+        margin-right: auto;
+    }
+    /*chinh Contact */
+    .row {
+        display: inline-block;
+    }
+    form {
+        display: grid;
+    }
+    p.contact-email {
+        margin-bottom: 18px;
+    }
+    .row .col.col-half {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .col.col-half .in-inform {
+        width: 100%;
+    }
+    .col .col-half.mobile-col-half {
+        padding-bottom: 5px;
+    }
+    .col .col-full {
+        padding-left: 0;
+    }
+    input[type="submit"] {
+        width: inherit;
+        padding: 10px 16px;
+    }
+}
